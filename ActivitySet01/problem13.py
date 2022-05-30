@@ -1,6 +1,4 @@
-# Network Programming
-# https://www.py4e.com/lessons/network
-from urllib.request import urlopen
+import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 import ssl
 
@@ -10,14 +8,19 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter - ')
-html = urlopen(url, context=ctx).read()
-soup = BeautifulSoup(html, "html.parser")
+html = urllib.request.urlopen(url, context=ctx).read()
+soup = BeautifulSoup(html, 'html.parser')
 
 # Retrieve all of the anchor tags
+count=int(input('Enter the count:')) 
+
+position=int(input('Enter the position:'))-1
 tags = soup('a')
-for tag in tags:
-    # Look at the parts of a tag
-    print('TAG:', tag)
-    print('URL:', tag.get('href', None))
-    print('Contents:', tag.contents[0])
-    print('Attrs:', tag.attrs)
+for i in range (count):
+    x=tags[position].get('href', None)
+    print(x)
+    url=x
+    html = urllib.request.urlopen(url, context=ctx).read()
+    soup = BeautifulSoup(html, 'html.parser')
+    tags = soup('a')
+    
