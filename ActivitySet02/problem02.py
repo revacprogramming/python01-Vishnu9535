@@ -1,10 +1,15 @@
+def input_two_numbers():
+    a=float(input('Enter the first number'))
+    b=float(input('Enter the second number'))
+    return a,b
 
 def add(a, b):
-    pass  # ...
+    sum=a+b
+    return sum
 
 
 def output(a, b, sum):
-    pass  # ...
+    print('the sum of',a,b,'is',sum)
 
 
 def main():
