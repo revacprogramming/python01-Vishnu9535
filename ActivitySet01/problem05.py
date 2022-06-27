@@ -4,7 +4,7 @@ def computepay(h,r):
   elif(h>40):
     m=h-40
     z=m*1.5*r+40*r
-    return z
+  return z
 
 hrs=input("Enter number of hours")
 h=float(hrs)
