@@ -18,12 +18,17 @@ def cs_to_dict(cs):
     return iot
             
             
-def dict_to_cs(d):
+def dict_to_cs(iot):
     """convert a dictionary to connect string"""
-       
+    v=list()
+    for key in iot:
+        k=key+'='+iot[key]
+        v.append(k)
+    cs=''
+    for i in v:
+        cs=cs+i+';'
+    return cs
     
-
-
 def main():
     cs = get_cs()
 
