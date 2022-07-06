@@ -1,8 +1,11 @@
 class Menu:
     """fill in class definition here"""
+    def __init__(self):
+        self=self
     def add(self,value,number):
         x=dict()
         y=dict()
+        
         self.y=y
         self.value=value
         self.number=number
@@ -12,6 +15,7 @@ class Menu:
     def __add__(self,other):
        
         self.y=Menu({**self.x,**other.x})
+        print(self.y)
 
     def show(self):
         for i in self.y:
