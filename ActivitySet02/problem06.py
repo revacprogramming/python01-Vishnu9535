@@ -15,8 +15,8 @@ class Menu:
     def __add__(self,other):
        
         self.y=Menu({**self.x,**other.x})
-        print(self.y)
-
+        print(self.y)  
+ 
     def show(self):
         for i in self.y:
             print(i,self.y[i])
