@@ -10,13 +10,13 @@ class Menu:
         self.value=value
         self.number=number
         self.x=x
-        self.x={self.value:self.number}
+        self.x={self.value:self.number}   
 
     def __add__(self,other):
        
         self.y=Menu({**self.x,**other.x})
         print(self.y)  
- 
+
     def show(self):
         for i in self.y:
             print(i,self.y[i])
