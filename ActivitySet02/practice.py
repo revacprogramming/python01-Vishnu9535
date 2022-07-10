@@ -31,3 +31,26 @@
 # print(captain)
 # print(type(goat))
 # print(type(captain))
+
+# m=tuple()
+# l=("hi",1)
+# b=("hey",2)
+# x=dict()
+# x=m+l+b
+# print(x)
+# x=dict()
+# x['k']=1
+# x['m']=2
+# print(x)
+class A:
+    def __init__(self, a):
+        self.a = a
+ 
+    # Overloading ~ operator, but with two operands
+    def __invert__(self, other):
+        return self.aother.a
+ 
+ 
+ob1 = A(2)
+ob2 = A(3)
+print(ob1+ob2)

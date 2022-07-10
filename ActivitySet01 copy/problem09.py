@@ -1,0 +1,6 @@
+fname=input('Enter the File name')
+nam=open(fname)
+wro=list()
+wro=nam.read().split()
+wro.sort()
+print(wro)
