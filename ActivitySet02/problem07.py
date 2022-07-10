@@ -9,4 +9,3 @@ m = m + ("idly", 10) + ("vada", 20)  # Hint: operator overloading special method
     
 print(m)  # should print the menu properly
 
-      
