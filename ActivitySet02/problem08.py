@@ -2,12 +2,13 @@ class Menu:
     """fill in class definition here"""
     def __init__(self):
         self.k=dict()
-    def __add__(self):
-        return self.k
-
+    def __setitem__(self,a,b):
+        self.k[a]=b
+    def __str__(self):
+        return self.k.__str__()
+    
 
 m = Menu() 
-m=dict()
 m["idly"] = 10
 m["vada"] = 20
 print(m)
