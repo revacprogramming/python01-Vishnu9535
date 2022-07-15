@@ -1,1 +1,51 @@
-print(3*3-4*1)
+from cmath import sqrt
+
+
+def no_triangle():
+    n=int(input("enter number of tiangles you want to input"))
+    return n 
+def xcoordinates(n):
+    x1=list()
+    x2=list()
+    x3=list()
+    for i in range(n):
+        i=float(input('enter the x1 coordinates'))
+        x1.append(i)
+    for i in range(n):
+        i=float(input('enter the x2 coordinates'))
+        x2.append(i)
+    for i in range(n):
+        i=float(input('enter the x3 coordinates'))
+        x3.append(i)
+    return x1,x2,x3
+def ycoordinates(n):
+    y1=list()
+    y2=list()
+    y3=list()
+    for i in range(n):
+        i=float(input('Enter the y1 coordinates'))
+        y1.append(i)
+    for i in range(n):
+        i=float(input('Enter the y2 coordinates'))
+        y2.append(i)
+    for i in range(n):
+        i=float(input('Enter the y3 coordinates'))
+        y3.append(i)
+    return y1,y2,y3
+def findarea(n,x1,x2,x3,y1,y2,y3):
+    area=list()
+    for i in range(n):
+        print(x2[i]-x1[i])
+        ar=int(((x2[i]-x1[i])*(x2[i]-x1[i])-(y2[i]-y1[i])*(y2[i]-y1[i]))**0.5)*int(((x3[i]-x1[i])*(x3[i]-x1[i])-(y3[i]-y1[i])*(y3[i]-y1[i]))**0.5)
+        print(ar)
+        area.append(ar)
+        return area
+def main():
+    n=no_triangle()
+    x1,x2,x3=xcoordinates(n)
+    y1,y2,y3=ycoordinates(n)
+    area=findarea(n,x1,x2,x3,y1,y2,y3)
+    print(x1,x2)
+    print(area)
+if __name__ == '__main__':
+    main()
