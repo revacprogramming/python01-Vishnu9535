@@ -58,7 +58,7 @@ def input_coordinates(n):
 def findarea(n,xy):
     for i in n:
         for j in xy:
-            
+            ug
 def main():
     n=no_rectangle()
     print(n)
@@ -66,3 +66,4 @@ def main():
     print(xy)
 if __name__ == '__main__':
     main() 
+      
