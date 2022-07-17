@@ -65,5 +65,5 @@ def main():
     xy=input_coordinates(n)
     print(xy)
 if __name__ == '__main__':
-    main() 
+    main()         
       
