@@ -3,8 +3,6 @@ def no_of_instances():
     return x
 def sum_of_unitfractions(x):
     m=list()
-    denominator=list()
-    numerator=list()
     for i in range(x):
         num=0
         den=1
@@ -21,26 +19,9 @@ def sum_of_unitfractions(x):
                     num=num/i
                     den=den/i
                 continue
-        print(num,"/",den)
-# def reducing_fractions(x,numerator,denominator):
-#     for i in range(int(x)):
-#         for j in range(1,denominator[i]):
-#             if numerator[i]%j==0 and denominator[i]%j==0:
-#                     numerator[i]=numerator[i]/j
-#                     denominator[i]=denominator[i]/j
-#     print(numerator,denominator)
-                
-# def reduce_fractions(x,sum_fractions):
-    
-    
-            
+        print(num,"/",den)          
 def main():
     x=no_of_instances()
-    sum_of_unitfractions(x)
-    # reducing_fractions(x,numerator,denominaor)
-    
-
-
-
+    sum_of_unitfractions(x)    
 if __name__ == '__main__':
     main()      
