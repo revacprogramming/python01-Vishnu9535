@@ -45,6 +45,9 @@
 #     area=findarea(n,x1,x2,x3,y1,y2,y3)
 #     print(area)
    
+from math import sqrt
+
+
 def no_rectangle():
     n=int(input("enter number of tiangles you want to input"))
     return n
@@ -61,17 +64,18 @@ def input_coordinates(n):
     return xy
 def findarea(n,xy):
     area=list()
-    for j in range(n):
-        print(j)
-        for i in xy:
-            a=(float(i[2])-float(i[0]))*
-        
-    
+    for i in xy:
+        a=sqrt((float(i[0])-float(i[2]))*(float(i[0])-float(i[2]))+(float(i[1])-float(i[3]))*(float(i[1])-float(i[3])))
+        b=sqrt((float(i[0])-float(i[4]))*(float(i[0])-float(i[4]))+(float(i[1])-float(i[5]))*(float(i[1])-float(i[5])))
+        m=a*b
+        area.append(m)
+    return area
 def main():
     n=no_rectangle()
     print(n)
     xy=input_coordinates(n)
     print(xy)
+    area=findarea(n,xy)
+    print(area)
 if __name__ == '__main__':
     main()         
-          
