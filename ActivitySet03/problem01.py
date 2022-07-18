@@ -50,15 +50,23 @@ def no_rectangle():
     return n
 def input_coordinates(n):
     xy=list()
+    l=list()
     for i in range(n):
-        i=(input('enter the coordinates'))
+        i=(input('enter the  coordinates'))
         i.split(' ')
-        xy.append(i)
+        l.append(i)
+    for i in l:
+        m=tuple(i.split(' '))
+        xy.append(m)
     return xy
 def findarea(n,xy):
-    for i in n:
-        for j in xy:
-            ug
+    area=list()
+    for j in range(n):
+        print(j)
+        for i in xy:
+            a=(float(i[2])-float(i[0]))*
+        
+    
 def main():
     n=no_rectangle()
     print(n)
