@@ -1,4 +1,39 @@
+from math import sqrt
+
+
+def no_rectangle():
+    n=int(input("enter number of tiangles you want to input"))
+    return n
+def input_coordinates(n):
+    xy=list()
+    l=list()
+    for i in range(n):
+        i=(input('enter the  coordinates'))
+        i.split(' ')
+        l.append(i)
+    for i in l:
+        m=tuple(i.split(' '))
+        xy.append(m)
+    return xy
+def findarea(n,xy):
+    area=list()
+    for i in xy:
+        a=sqrt((float(i[4])-float(i[0]))*(float(i[4])-float(i[0]))+(float(i[5])-float(i[1]))*(float(i[5])-float(i[1])))
+        b=sqrt((float(i[4])-float(i[2]))*(float(i[4])-float(i[2]))+(float(i[5])-float(i[3]))*(float(i[5])-float(i[3])))
+        m=a*b
+        area.append(m)
+    return area
+def main():
+    n=no_rectangle()
+    print(n)
+    xy=input_coordinates(n)
+    area=findarea(n,xy)
+    for i in area:
+        print(i,end=" ")
+if __name__ == '__main__':
+    main()         
 # from cmath import sqrt
+
 
 
 # def no_triangle():
@@ -45,37 +80,3 @@
 #     area=findarea(n,x1,x2,x3,y1,y2,y3)
 #     print(area)
    
-from math import sqrt
-
-
-def no_rectangle():
-    n=int(input("enter number of tiangles you want to input"))
-    return n
-def input_coordinates(n):
-    xy=list()
-    l=list()
-    for i in range(n):
-        i=(input('enter the  coordinates'))
-        i.split(' ')
-        l.append(i)
-    for i in l:
-        m=tuple(i.split(' '))
-        xy.append(m)
-    return xy
-def findarea(n,xy):
-    area=list()
-    for i in xy:
-        a=sqrt((float(i[4])-float(i[0]))*(float(i[4])-float(i[0]))+(float(i[5])-float(i[1]))*(float(i[5])-float(i[1])))
-        b=sqrt((float(i[4])-float(i[2]))*(float(i[4])-float(i[2]))+(float(i[5])-float(i[3]))*(float(i[5])-float(i[3])))
-        m=a*b
-        area.append(m)
-    return area
-def main():
-    n=no_rectangle()
-    print(n)
-    xy=input_coordinates(n)
-    area=findarea(n,xy)
-    for i in area:
-        print(i,end=" ")
-if __name__ == '__main__':
-    main()         
