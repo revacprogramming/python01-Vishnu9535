@@ -76,6 +76,6 @@ def main():
     xy=input_coordinates(n)
     area=findarea(n,xy)
     for i in area:
-        print(i,end=" ,")
+        print(i,end=" ")
 if __name__ == '__main__':
     main()         
