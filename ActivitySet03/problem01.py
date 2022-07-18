@@ -65,8 +65,8 @@ def input_coordinates(n):
 def findarea(n,xy):
     area=list()
     for i in xy:
-        a=sqrt((float(i[0])-float(i[2]))*(float(i[0])-float(i[2]))+(float(i[1])-float(i[3]))*(float(i[1])-float(i[3])))
-        b=sqrt((float(i[0])-float(i[4]))*(float(i[0])-float(i[4]))+(float(i[1])-float(i[5]))*(float(i[1])-float(i[5])))
+        a=sqrt((float(i[4])-float(i[0]))*(float(i[4])-float(i[0]))+(float(i[5])-float(i[1]))*(float(i[5])-float(i[1])))
+        b=sqrt((float(i[4])-float(i[2]))*(float(i[4])-float(i[2]))+(float(i[5])-float(i[3]))*(float(i[5])-float(i[3])))
         m=a*b
         area.append(m)
     return area
@@ -74,8 +74,8 @@ def main():
     n=no_rectangle()
     print(n)
     xy=input_coordinates(n)
-    print(xy)
     area=findarea(n,xy)
-    print(area)
+    for i in area:
+        print(i,end=" ,")
 if __name__ == '__main__':
     main()         
