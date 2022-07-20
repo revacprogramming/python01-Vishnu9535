@@ -1,3 +1,7 @@
+# x=['a','b','c','d']
+# for j in range(len(x)):
+#     print(x[j])
+
 def number_of_strings():
     n=int(input('enter number of strings'))
     return n 
@@ -32,3 +36,4 @@ def main():
         find_palindrome(words,no_letters)
 if __name__ == '__main__':
     main() 
+    

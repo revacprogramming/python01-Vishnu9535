@@ -4,6 +4,14 @@
 # print(split(x))
 # x='str'
 # print(len(x))
-x=['a','b','c','d']
-for j in range(len(x)):
-    print(x[j])
+
+
+def input():
+    n=int(input("enter number of sequence to input"))
+    return n
+def inputsequence()
+
+def main():
+    n=input()
+if __name__ == '__main__':
+    main() 

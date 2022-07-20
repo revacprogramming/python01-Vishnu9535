@@ -15,7 +15,6 @@ def sum_of_unitfractions(x):
         for k in range(x):
             for i in range(2,(int(den)+1)):
                 if num%i==0 and den%i==0:
-                    print(i)
                     num=num/i
                     den=den/i
                 continue
