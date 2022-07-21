@@ -5,6 +5,7 @@ for i in range(k,len(a)):
         k=i+(i+3)
         for j in range(a[i+1]):
             print(a[i+2],end=' ')
-    elif a[i]==0 and a[i+1]==0:
+    if a[i]==0 and a[i+1]==0:
         k=i+(i+2)
-        print(0,end=' ')
+        print(a[i],end=' ')
+    k=i+10
