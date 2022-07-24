@@ -1,7 +1,7 @@
 def seq_input():
     n=int(input('enter number of sequence to input'))
     return n
-def inputsequence():
+def input_sequence():
     noele=int(input('enter number of elements in the sequence'))
     sequence=(input('enter the sequence'))
     return noele,sequence
@@ -32,7 +32,7 @@ def run_sequence(noele,sequence):
 def main():
     n=seq_input()
     for i in range(n):
-        noele,sequence=inputsequence()
+        noele,sequence=input_sequence()
         run_sequence(noele,sequence)
 if __name__ == '__main__':
     main() 
