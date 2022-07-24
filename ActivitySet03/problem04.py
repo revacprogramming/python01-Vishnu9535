@@ -36,6 +36,8 @@ def main():
         run_sequence(noele,sequence)
 if __name__ == '__main__':
     main() 
+    
+
 # a=[1,0,2,0,0,10,1,2,3,4,0,3,0,2]
 # k=0
 # x=len(a)
